@@ -18,8 +18,17 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	animation: caranimation 5s infinite;
+	animation: caranimation 5s infinite;	
 }
+
+.dog{
+	width: 110px;
+	position: absolute;
+	top: 56%;
+	left: 90%;
+	animation: doganimation 7s infinite 5s;
+}
+
 @keyframes caranimation {
 	0% {transform: translatex(0px) translatey(0px);}
 	100% {transform: translatex(50px) translatey(50px);}
@@ -27,4 +36,8 @@
 @keyframes bicycleanimation {
 	0% {transform: translatex(0px);}
 	100% {transform: translatex(650px);}
+}
+@keyframes doganimation {
+	0% {transform: translatex(0px);}
+	100% {transform: translatex(-650px);}
 }
